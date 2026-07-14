@@ -118,7 +118,7 @@ nav.scrolled{
 
 /* ---------- hero ---------- */
 .hero{
-  position:relative;
+  position:sticky; /* not relative: it would override .stacked's sticky pinning, and the negative top set by layoutStack() on short viewports would shift the hero up under the nav */
   min-height:100vh;
   display:flex;align-items:center;
   overflow:hidden;
